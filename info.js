@@ -112,18 +112,7 @@ let info = {
     portfolio: [{
             name: 'Sheet Recognizer',
             pictures: [
-                {
-                    img:  require('./src/assets/portfolio/msr/one.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/msr/two.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/msr/three.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/msr/four.png'),
-                }
+             
             ],
             technologies: ['Computer Vision', 'OpenCV', 'AI', 'Flask', 'Sockets'],
             category: 'Algorithm',
@@ -135,21 +124,7 @@ let info = {
         {
             name: 'NoQ Job Portal',
             pictures: [
-                {
-                    img:  require('./src/assets/portfolio/noq/logo.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/noq/one.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/noq/two.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/noq/three.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/noq/four.png'),
-                }
+               
             ],
             technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
             category: 'Website',
@@ -161,12 +136,7 @@ let info = {
         {
             name: 'POST',
             pictures: [
-                {
-                    img: require('./src/assets/portfolio/post/one.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/post/two.png'),
-                }
+               
             ],
             technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
             category: 'Algorithm',
@@ -178,12 +148,7 @@ let info = {
         {
             name: 'Suicide Analyzer',
             pictures: [
-                {
-                    img: require('./src/assets/portfolio/suicide/suicide-analyzer.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/suicide/suicide2-original.png')
-                }
+              
             ],
             technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
             category: 'Website',
@@ -195,18 +160,7 @@ let info = {
         {
             name: 'Sentiment Analyzer',
             pictures: [
-                {
-                    img: require('./src/assets/portfolio/smit/one.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/smit/two.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/smit/three.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/smit/four.png'),
-                }
+               
             ],
             technologies: ['LSTM', 'Keras', 'Angular', 'Tweepy', 'Heroku', 'Python'],
             category: 'Alogrithm',
@@ -218,15 +172,7 @@ let info = {
         {
             name: 'Clumpr',
             pictures: [
-                {
-                    img: require('./src/assets/portfolio/clumpr/logo.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/clumpr/one.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/clumpr/two.png'),
-                }
+              
             ],
             technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
             category: 'Web App',
@@ -238,24 +184,7 @@ let info = {
         {
             name: 'Nutricare',
             pictures: [
-                {
-                    img: require('./src/assets/portfolio/nc/one.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/nc/two.png'),
-                },
-                {
-                    img:  require('./src/assets/portfolio/nc/three.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/nc/four.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/nc/five.png'),
-                },
-                {
-                    img: require('./src/assets/portfolio/nc/six.png'),
-                }
+              
             ],
             technologies: ['Node', 'Angular', 'Express', 'MongDB', 'Medical'],
             category: 'Website',
