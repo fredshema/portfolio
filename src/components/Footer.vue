@@ -1,18 +1,17 @@
 <template>
-  <div class="bg-secondary">
+  <div class="bg-dark">
     <div class="container py-3">
       <div class="row pt-1 align-items-center">
-        <div
-          class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
-          style="color: white;"
-        >
-          <span>© 2020 Copyright: Hrishikesh Paul</span>
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow text-light">
+          <span
+            >&copy; 2020 - {{ new Date().getFullYear() }} Copyright {{ name }}</span
+          >
         </div>
 
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
           <div class="text-center">
             <button
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('linkedin')"
             >
               <i class="fab fa-linkedin"></i>
@@ -25,9 +24,9 @@
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
+              @click="open('twitter')"
             >
-              <i class="fab fa-angellist"></i>
+              <i class="fab fa-twitter"></i>
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
@@ -51,8 +50,9 @@ export default {
     return {
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
+      twitter: info.links.twitter,
       resume: info.links.resume,
+      name: info.name,
     };
   },
   methods: {
@@ -64,8 +64,8 @@ export default {
         case "github":
           window.open(this.github, "_blank");
           break;
-        case "angellist":
-          window.open(this.angellist, "_blank");
+        case "twitter":
+          window.open(this.twitter, "_blank");
           break;
         case "resume":
           window.open(this.resume, "_blank");

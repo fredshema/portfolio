@@ -2,12 +2,11 @@
   <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
     <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
     <div class="parent">
-      <Home :nightMode="nightMode" />
-      <About id="about" :nightMode="nightMode" />
-      <Skills id="skills" :nightMode="nightMode" />
-      <Portfolio id="portfolio" :nightMode="nightMode" />
-      <Recommendation :nightMode="nightMode" />
-      <Contact id="contact" :nightMode="nightMode" />
+      <Home class="mh-85" :nightMode="nightMode" />
+      <About id="about" class="py-5" :nightMode="nightMode" />
+      <Skills id="skills" class="py-5" :nightMode="nightMode" />
+      <!-- <Portfolio id="portfolio" :nightMode="nightMode" /> -->
+      <Contact id="contact" class="py-5" :nightMode="nightMode" />
       <Footer :nightMode="nightMode" />
     </div>
   </div>
@@ -19,7 +18,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
-import Recommendation from "./components/Recommendation";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -33,17 +31,17 @@ export default {
     About,
     Skills,
     Portfolio,
-    Recommendation,
     Contact,
     Footer,
   },
   data() {
     return {
-      nightMode: false,
+      nightMode: true,
       config: info.config,
     };
   },
   created() {
+    document.title = "Porfolio • " + info.name;
     if (this.config.use_cookies) {
       this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
     }
@@ -92,7 +90,9 @@ export default {
     width: fit-content;
   }
 }
-
+.mh-85 {
+  min-height: 85vh;
+}
 .parent {
   margin-top: 38px;
   padding-top: 40px;
@@ -121,21 +121,20 @@ export default {
 
 /* To set scrollbar width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 9px;
   border: 2px solid white; /* Use your background color instead of White */
   background-clip: content-box;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 9px;
+  background: #777;
+  border-radius: 3px;
 }
 
 /* Handle on hover */

@@ -113,6 +113,7 @@
 
 <script>
 import emailjs from "emailjs-com";
+import info from "../../info";
 
 import Snackbar from "./helpers/Snackbar";
 
@@ -153,16 +154,16 @@ export default {
         var obj = {
           user_email: this.email,
           from_name: this.name,
-          message_html: this.text,
-          to_name: "Hrishikesh Paul",
+          user_message: this.text,
+          to_name: info.name,
         };
 
         emailjs
           .send(
-            config.emailjs.serviceID,
-            config.emailjs.templateID,
+            info.config.mail.service,
+            info.config.mail.template,
             obj,
-            config.emailjs.userID
+            info.config.mail.uid
           )
           .then(
             (result) => {

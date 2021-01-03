@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
+  <div :class="{ 'bg-white': !nightMode, 'bg-dark2': nightMode }" class="p-st">
     <div class="container py-4">
       <div
         class="text-center"
