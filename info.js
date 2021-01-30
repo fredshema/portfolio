@@ -16,10 +16,10 @@ let info = {
   description:
     "I am a second year Infomation Technology graduate student at Adventist University of Central Africa (AUCA) with an interest in Software Development and UI Design  - and seeking exciting opportunities related to the same.<br><br>I am a quality oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts.",
   links: {
-    linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
+    linkedin: "https://www.linkedin.com/in/shema-fred-37bb051a2/",
     github: "https://github.com/shema-fred",
     twitter: "https://twitter.com/shxmv_",
-    resume: "",
+    resume: "https://drive.google.com/file/d/1GPiv2uJ3KKv8qjrfJzbOG6G7PREv47tR/view?usp=sharing",
   },
   education: [
     {
