@@ -1,0 +1,19 @@
+@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: var(--dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

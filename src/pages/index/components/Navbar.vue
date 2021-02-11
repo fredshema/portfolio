@@ -25,7 +25,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span style="color: gray; font-size: 23px;"
+          <span style="color: gray; font-size: 23px"
             ><i class="fas fa-bars"></i
           ></span>
         </button>
@@ -50,7 +50,7 @@
                 >skills</a
               >
             </li>
-            <li class="nav-item mx-2 ">
+            <li class="nav-item mx-2">
               <a
                 class="nav-link"
                 href="/portfolio"
@@ -66,6 +66,14 @@
                 @click.prevent="$emit('scroll', 'contact')"
                 :class="{ 'text-light': nightMode }"
                 >contact</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                href="/admin"
+                :class="{ 'text-light': nightMode }"
+                >Login</a
               >
             </li>
             <li class="nav-item ml-2">
@@ -92,7 +100,7 @@
 
 <script>
 import Logo from "./helpers/Logo";
-import info from "../../info";
+import info from "../../../../info";
 
 export default {
   name: "Navbar",
@@ -114,6 +122,9 @@ export default {
     switchMode() {
       this.localNightMode = !this.localNightMode;
       this.$emit("nightMode", this.localNightMode);
+    },
+    goToStatic() {
+      location.assign("../admin.html");
     },
   },
 };

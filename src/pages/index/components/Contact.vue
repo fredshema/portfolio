@@ -113,7 +113,7 @@
 
 <script>
 import emailjs from "emailjs-com";
-import info from "../../info";
+import info from "../../../../info";
 
 import Snackbar from "./helpers/Snackbar";
 

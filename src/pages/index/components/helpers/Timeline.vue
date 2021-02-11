@@ -100,7 +100,7 @@ ul.timeline {
 }
 ul.timeline:before {
   content: " ";
-  background: #d4d9df;
+  background: var(--secondary);
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -115,11 +115,11 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
   content: " ";
-  background: rgb(212, 149, 97);
+  background: var(--secondary);
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid rgb(236, 159, 117);
+  border: 2px solid var(--secondary);
   left: 20px;
   width: 20px;
   height: 20px;

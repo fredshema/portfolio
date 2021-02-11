@@ -2,6 +2,7 @@ let info = {
   name: "Shema Fred",
   logo_name: "Shema",
   flat_picture: require("./src/assets/portrait.png"),
+  large_logo: require("./src/assets/name-logo.png"),
   config: {
     use_cookies: false,
     navbar: {
@@ -19,7 +20,8 @@ let info = {
     linkedin: "https://www.linkedin.com/in/shema-fred-37bb051a2/",
     github: "https://github.com/shema-fred",
     twitter: "https://twitter.com/shxmv_",
-    resume: "https://drive.google.com/file/d/1GPiv2uJ3KKv8qjrfJzbOG6G7PREv47tR/view?usp=sharing",
+    resume:
+      "https://drive.google.com/file/d/1GPiv2uJ3KKv8qjrfJzbOG6G7PREv47tR/view?usp=sharing",
   },
   education: [
     {

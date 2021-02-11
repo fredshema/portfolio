@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import info from "../../info";
+import info from "../../../../info";
 
 export default {
   name: "Skills",
@@ -84,13 +84,13 @@ export default {
 }
 
 .fa {
-  color: rgb(212, 149, 97);
+  color: var(--secondary);
   font-size: 40px;
   transition: all 0.5s;
 }
 
 .fas {
-  color: rgb(212, 149, 97);
+  color: var(--secondary);
   font-size: 40px;
   /* font-weight: bold; */
   transition: all 0.5s;

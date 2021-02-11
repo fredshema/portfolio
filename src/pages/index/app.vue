@@ -21,7 +21,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import info from "../info";
+import info from "../../../info";
 
 export default {
   name: "App",
@@ -41,7 +41,7 @@ export default {
     };
   },
   created() {
-    document.title = "Porfolio • " + info.name;
+    document.title = info.name;
     if (this.config.use_cookies) {
       this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
     }
@@ -77,6 +77,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --secondary: #ed1a3a;
+  --light: #d4d9df;
+}
 #app {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -105,6 +109,9 @@ export default {
 
 .pblue {
   color: #669db3ff;
+}
+.pRed {
+  color: var(--secondary);
 }
 
 .bg-dark2 {
@@ -148,7 +155,7 @@ export default {
 }
 
 .tooltip .tooltip-inner {
-  background: rgb(212, 149, 97);
+  background: var(--secondary);
   color: white;
   border-radius: 8px;
   font-size: 10px;
@@ -161,7 +168,7 @@ export default {
   border-style: solid;
   position: absolute;
   margin: 5px;
-  border-color: rgb(212, 149, 97);
+  border-color: var(--secondary);
   z-index: 1;
 }
 

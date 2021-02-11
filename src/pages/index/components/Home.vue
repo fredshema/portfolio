@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import info from "../../info";
+import info from "../../../../info";
 
 import Wave from "./helpers/Wave";
 

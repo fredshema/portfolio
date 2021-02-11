@@ -5,12 +5,12 @@
       :class="{ pgray: !nightMode, 'text-light': nightMode }"
       >{{ name }}</span
     >
-    <span class="logo-title-dot pblue">{{ dot }}</span>
+    <span class="logo-title-dot pRed">{{ dot }}</span>
   </div>
 </template>
 
 <script>
-import info from "../../../info";
+import info from "../../../../../info";
 
 export default {
   name: "Logo",
