@@ -69,12 +69,10 @@
               >
             </li>
             <li class="nav-item mx-2">
-              <a
-                class="nav-link"
-                href="/admin"
+              <b-link
+                class="nav-link" :to="{name:'login'}"
                 :class="{ 'text-light': nightMode }"
-                >Login</a
-              >
+                >Login</b-link>
             </li>
             <li class="nav-item ml-2">
               <a

@@ -1,21 +1,22 @@
-"use strict";
-const glob = require("glob");
-const pages = {};
-
-glob.sync("./src/pages/**/app.js").forEach((path) => {
-  const chunk = path.split("./src/pages/")[1].split("/app.js")[0];
-  pages[chunk] = {
-    entry: path,
-    template: "public/index" + chunk + ".html",
-    title: chunk,
-    chunks: ["chunk-vendors", "chunk-common", chunk],
-  };
-});
 module.exports = {
-  pages,
-  chainWebpack: (config) => {
-    config.module.rules.delete("eslint");
-    config.plugins.delete("named-chunks");
+  productionSourceMap: false,
+
+  configureWebpack: {
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: "all",
+            maxSize: 250000,
+            maxAsyncRequests: 250000,
+            maxInitialRequests: 250000,
+            reuseExistingChunk: true,
+            enforce: true,
+            priority: 1,
+          },
+        },
+      },
+    },
   },
   devServer: {
     host: "localhost",

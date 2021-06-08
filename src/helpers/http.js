@@ -28,10 +28,9 @@ const httpClient = axios.create(config);
  * @param {*} config
  */
 const authInterceptor = async (config) => {
-  const accessToken = await Vue.prototype.$auth.getTokenSilently();
+  const { __raw: accessToken } = await Vue.prototype.$auth.getIdTokenClaims();
   config.headers.Authorization = `Bearer ${accessToken}`;
   config.headers["x-apikey"] = AHJ;
-  console.log(accessToken);
   return config;
 };
 
