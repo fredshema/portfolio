@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -18,7 +18,7 @@
     "core-js": "^3.6.4",
     "emailjs-com": "^2.4.1",
     "material-icons": "^0.3.1",
-    "node-sass": "^5.0.0",
+    "sass": "^1.68.0",
     "sass-loader": "^10.1.1",
     "serve": "^11.3.0",
     "v-tooltip": "^2.0.3",
