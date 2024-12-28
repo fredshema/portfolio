@@ -1,0 +1,22 @@
+// @import "~bootstrap/scss/variables";
+$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$enable-responsive-font-sizes: true;
+
+// colors
+$dark: #070f1a;
+$light: #e5e5ff;
+$danger: #ed1a3a;
+$primary: #5492f1;
+$body-color: #404041;
+$border-radius: 2px;
+$input-border-color: #c1c5c5;
+$input-bg: #f8f9fa;
+$input-height: 2.65rem;
+$body-bg: #f8f9fa;
+$modal-fade-transform: scale(0);
+$modal-show-transform: scale(1);
+$modal-content-border-radius: 1px;
+$modal-content-box-shadow-xs: 0px 2px 3px 2px #00000021;
+$modal-content-box-shadow-xs-up: 0px 2px 3px 2px #00000021;
